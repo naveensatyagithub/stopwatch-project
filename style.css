@@ -1,0 +1,157 @@
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Beautiful gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  /* Container for the Stopwatch/Clock */
+  .container {
+    background: rgba(255, 255, 255, 0.8); /* Transparent background for the container */
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+  }
+  
+  /* Title */
+  h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* Clock Display */
+  .clock {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Stopwatch Display */
+  .stopwatch {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Countdown Timer Display */
+  #countdownDisplay {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #42e695, #3bb2b8);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Input Fields and Buttons */
+  input[type="number"] {
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #42e695;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 12px 20px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #42e695, #3bb2b8);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #3bb2b8, #42e695);
+  }
+  
+  /* Lap Button */
+  button:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  
+  /* Lap List */
+  #lapList {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  #lapList li {
+    background: #fff;
+    color: #333;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  /* Controls (Start, Stop, Reset) Button */
+  .controls button {
+    margin: 10px;
+    background: #00c6ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .controls button:hover {
+    background: #0072ff;
+  }
+  
+  .controls button:active {
+    background: #005bb5;
+  }
+  
+  /* Final Touches */
+  #countdownDisplay {
+    background-color: #6a11cb;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+  
+  
